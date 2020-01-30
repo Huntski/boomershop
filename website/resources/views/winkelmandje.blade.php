@@ -39,7 +39,7 @@
         <table>
             <tr class="products">
                 <td class="item">Producten</td>
-                <td class="price">{{$total}}</td>
+                <td class="price">€{{$total}}</td>
             </tr>
             <tr class="shipping">
                 <td class="item">Shipping</td>
@@ -47,7 +47,7 @@
             </tr>
             <tr class="total">
                 <td class="item">Totaal</td>
-                <td class="price">{{$total + 3}}</td>
+                <td class="price">€{{$total + 3}}</td>
             </tr>
         </table>
         <a href="">

@@ -17,6 +17,7 @@ class Shoppingcart extends Model
                 'items' => []
             ];
             setcookie('shoppingCart', json_encode($values), time() + (86400 * 30), "/");
+            redirect(\Request::url());
         }
     }
 
