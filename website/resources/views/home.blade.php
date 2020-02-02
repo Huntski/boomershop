@@ -21,7 +21,7 @@
             <a href="{{route('cart.add', $product->id)}}">
                 <div class="product">
                     <div class="product__image">
-                        <img src="{{'storage/'.$product->photo}}" alt="">
+                        <img src="{{$product->photo}}" alt="">
                     </div>
                     <span class="product__price">Nu €{{$product->prijs}}</span>
                 </div>

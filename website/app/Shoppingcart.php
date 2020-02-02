@@ -67,7 +67,7 @@ class Shoppingcart extends Model
         $cart = json_decode($_COOKIE['shoppingCart']);
         array_push($cart->items, $id);
         setcookie('shoppingCart', json_encode($cart), time() + (86400 * 30), "/");
-        return redirect()->back();
+        return redirect()->route('cart');
     }
 
     public function deleteProduct($id)

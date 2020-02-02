@@ -1,5 +1,19 @@
+/* Global css */
+
 html, body {
     font-family: sans-serif;
+}
+
+/* Layout css */
+
+.dashboard {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.dashboard__options {
+    width: 50%;
 }
 
 .form {
@@ -14,4 +28,8 @@ html, body {
 
 .form__span {
     text-transform: capitalize;
+}
+
+.dashboard__products {
+    width: auto;
 }

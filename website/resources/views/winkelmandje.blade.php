@@ -20,7 +20,9 @@
                 <tr>
                     <td class="product">{{$product->titel}}</td>
                     <td class="price">€{{$product->price}}</td>
-                    <td class="quantity"><img src="img/plus.svg">{{$product->quantity}}<img src="img/minus.svg"></tdc>
+                    <td class="quantity">
+                        {{$product->quantity}}
+                    </td>
                     <td class="total">€{{$product->price * $product->quantity}}</td>
                     <td><a href="{{ route('cart.delete', $product->id)}}"><img class="cross" src="img/cross.svg"></td>
                 </tr>

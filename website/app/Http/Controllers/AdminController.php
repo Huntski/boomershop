@@ -25,17 +25,20 @@ class AdminController extends Controller
             (object) [
                 'name' => 'titel',
                 'type' => 'text',
-                'required' => true
+                'required' => true,
+                'placeholder' => 'titel..'
             ],
             (object) [
                 'name' => 'photo',
-                'type' => 'file',
-                'required' => true
+                'type' => 'url',
+                'required' => true,
+                'placeholder' => 'photo url'
             ],
             (object) [
                 'name' => 'prijs',
                 'type' => 'number',
-                'required' => true
+                'required' => true,
+                'placeholder' => 'getal'
             ]
         ];
 

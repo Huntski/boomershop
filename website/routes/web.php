@@ -23,6 +23,7 @@ Route::prefix('admin')->group(function() {
         Route::get('', 'AdminController@index')->name('admin.index');
 
         Route::post('/store', 'ProductController@store')->name('admin.store');
+        Route::post('/delete', 'ProductController@delete')->name('admin.delete');
     });
 
     Route::get('/login', 'Auth\AdminloginController@show')->name('admin.login');
