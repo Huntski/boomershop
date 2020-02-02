@@ -9,8 +9,8 @@
     <span style="display:block; height: 25px;"></span>
     <div class="aanbieding">
         <div class="aanbieding__content">
-            <p class="title">PIZZA CHICKEN KEBAB</p>
-            <h4>Tijdelijk €12,- </h4>
+            <p class="title" style="text-transform: uppercase;">{{$products[0]->titel}}</p>
+            <h4>Tijdelijk €{{$products[0]->prijs}},- </h4>
         </div>
     </div>
 
@@ -21,7 +21,7 @@
             <a href="{{route('cart.add', $product->id)}}">
                 <div class="product">
                     <div class="product__image">
-                        <img src="{{$product->photo}}" alt="">
+                        <img src="{{$product->photo}}" alt="product image">
                     </div>
                     <span class="product__price">Nu €{{$product->prijs}}</span>
                 </div>

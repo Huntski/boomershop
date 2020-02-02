@@ -52,7 +52,7 @@
                 <td class="price">€{{$total + 3}}</td>
             </tr>
         </table>
-        <a href="">
+        <a href="{{route('location')}}">
             <button>
                 Volgende
             </button>

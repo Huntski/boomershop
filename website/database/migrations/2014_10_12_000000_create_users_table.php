@@ -21,6 +21,11 @@ class CreateUsersTable extends Migration
             $table->string('password');
             $table->rememberToken();
             $table->timestamps();
+
+            $table->string('telefoonnummer')->nullable();
+            $table->string('postcode')->nullable();
+            $table->string('huisnummer')->nullable();
+            $table->string('toevoegingen')->nullable();
         });
     }
 

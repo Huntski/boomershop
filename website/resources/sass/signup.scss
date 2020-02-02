@@ -1,0 +1,52 @@
+.register input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 35px;
+    resize: vertical;
+}
+
+.register {
+    font-family: 'PT sans';
+    display: grid;
+    grid-template-columns: 66% 33%;
+}
+
+.register form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 1.5em;
+}
+
+.register .signupform {
+    border-radius: 1px;
+    background-color: #ffffff;
+    padding: 50px;
+    margin: 5em auto;
+    margin-right: 50px;
+    width: 55%;
+}
+
+.register .text {
+    margin: 11em auto;
+    margin-left: 30px;
+    width: 55%;
+}
+
+.register .text h4 {
+    color: #6d6d6d;
+}
+
+.register .Signup button {
+    color: rgb(255, 255, 255);
+    background-color: #FE2F90;
+    border: solid 0px transparent;
+    padding: .6em 1.5em;
+    font-weight: 600;
+    letter-spacing: 1px;
+    font-size: 1.2em;
+    margin-bottom: 40px;
+}

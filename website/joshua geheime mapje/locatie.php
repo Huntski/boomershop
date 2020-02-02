@@ -35,23 +35,7 @@
         </div>
     </header>
     <main>
-        <h2>Locatie</h2>
-        <form action="POST">
-            <div class="inputdiv">
-                <input placeholder="bv. 6969OK" type="text" name="postcode" id="" autocomplete="off" autofocus required>
-                <label for="postcode">Postcode*</label>
-            </div>
-            <div class="inputdiv">
-                <input placeholder="bv. 420" type="text" name="huisnummer" id="" autocomplete="off" required>
-                <label for="huisnummer">Huisnummer*</label>
-            </div>
-            <div class="inputdiv">
-                <input placeholder="bv. A" type="text" name="toevoegingen" id="" autocomplete="off">
-                <label for="toevoegingen">Toevoegingen*</label>
-            </div>
-        </form>
-        <button style="background: #424242;" class="function">Vorige</button>
-        <button style="background: #FE2F90; float: right;" class="function">Volgende</button>
+    
     </main>
     <footer>
         <p>&#169; 2019 BoomerShop - Amsterdam</p>

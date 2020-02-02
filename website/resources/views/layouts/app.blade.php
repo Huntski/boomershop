@@ -21,7 +21,6 @@
         <div class="middle">
             <ul>
                 <a href="/menu"><li class="@if(\Request::route()->getName()=='menu') active @endif">Menu</li></a>
-                <a href="/aanbiedingen" class="@if(\Request::route()->getName()=='aanbiedingen') active @endif"><li>Aanbiedingen</li></a>
             </ul>
         </div>
         <div class="right">
@@ -37,8 +36,14 @@
                     </span>
                 </div>
             </a>
+
+            @guest
             <a href="login"><button>Sign in</button></a>
             <a href="register"><button class="active">Sign up</button></a>
+            @else
+            <a href="{{route('account.show')}}"><button class="name" style="text-decoration: none; color: #fff">{{auth()->user()->name ?? ''}}</button></a>
+            <button>logout</button>
+            @endguest
         </div>
     </header>
 

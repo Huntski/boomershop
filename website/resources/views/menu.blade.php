@@ -76,7 +76,7 @@
     @foreach($products as $product)
     <div class="row-master">
         <div class="row-outside">
-            <img src="https://cdn01.pijpermedia.nl/1iMzLnztaEVTvEoPXcoEVS1QofM=/667x375/smart/https://cdn.indicium.nu/source/panorama/uploads/2019/11-november/pizza.jpg">
+            <img src="{{$product->photo}}">
             <div class="gerecht">
                 <div class="felx-start">
                     <div class="content">{{$product->titel}}</div>
@@ -85,7 +85,7 @@
                     <a href="{{route('cart.add', $product->id)}}">
                         <button class="bestel">Bestel</button>
                     </a>
-                    <p>€12</p>
+                    <p>€{{$product->prijs}}-</p>
                 </div>
             </div>
         </div>

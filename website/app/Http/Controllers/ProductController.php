@@ -23,12 +23,11 @@ class ProductController extends Controller
 
         $p->save();
 
-        return redirect()->back();
+        return redirect()->route('cart');
     }
 
     public function delete()
     {
         Product::findOrFail(request('product_id'))->delete();
-        return redirect()->back();
     }
 }
