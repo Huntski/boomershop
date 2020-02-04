@@ -11,6 +11,6 @@ K_SEC Project | A pizza webshop
 - [x] Technisch ontwerp
 - [x] Thread model
 
-- [ ] Test plan
+- [x] Test plan
 
 - [ ] Applicatie
